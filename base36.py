@@ -7,7 +7,7 @@ class Base36(object):
 		if number < 0:
 			raise ValueError('ERROR: Number is not positive')
 
-		alphabet, base36 = ['0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ', ''] # alpha
+		alphabet, base36 = ['0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ', '']
 
 		while number:
 			number, i = divmod(number, 36)
